@@ -5,17 +5,21 @@
 
 body {
   background: #000000;
+  height: 100vh;
+  margin: 0;
 }
 
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
 }
 header .logo {
-  width: 60px;
-  height: 55px;
+  width: auto;
+  height: 10vh;
+  cursor: pointer;
 }
 header .search {
   background: none;
@@ -31,8 +35,8 @@ header .search:focus {
   color: #fff;
 }
 header .cart {
-  width: 50px;
-  height: 50px;
+  width: 8vh;
+  height: 8vh;
   font-size: 35px;
   display: flex;
   align-items: center;
@@ -46,7 +50,34 @@ header .cart.active {
   background: #f87400;
   color: #000000;
 }
-header a:hover {
-  background: #f87400;
-  color: #000000;
+
+hr {
+  border-color: rgba(53, 53, 53, 0.5);
+}
+
+.addItem {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  background-color: rgba(94, 94, 94, 0.3568627451);
+  padding: 30px;
+  color: #f87400;
+  border-radius: 10px;
+  width: 40vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#addItemForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#addItemForm #image {
+  font-family: "Montserrat";
+  font-size: 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

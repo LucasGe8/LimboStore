@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Limbo Store</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <img src="/images/logo.png" alt="Limbo-Logo" class="logo">
-        <input type="text" name="search" class="search" placeholder="Buscar...">
-        <a href="#" class="cart"><ion-icon name="cart-outline"></ion-icon></a>
+      <a href="index.html"
+        ><img src="/images/logo.png" alt="Limbo-Logo" class="logo"
+      /></a>
+      <input type="text" name="search" class="search" placeholder="Buscar..." />
+      <a href="#" class="cart"><ion-icon name="cart-outline"></ion-icon></a>
     </header>
-    <div class = "item-container">
+    <hr />
+    <div class="item-container"></div>
+    <button id="newItem"><ion-icon name="add-circle-outline"></ion-icon></button>
+    <div class="addItem">
+      <form id="addItemForm">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <label for="description">Descripción:</label>
+        <input type="text" name="descripcion" id="descripcion" />
+        <br />
+        <label for="price">Precio:</label>
+        <input type="text" name="precio" id="precio" required />
+        <br />
+        <label for="image" id="imagelabel">Imagen:</label>
+        <input type="file" name="image" id="image" accept="image/*" required/>
+
+        <button type="submit" id="btnSave">Guardar</button>
+        <button type="button" id="btnCancel">Cancelar</button>
+      </form>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

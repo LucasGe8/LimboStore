@@ -79,5 +79,20 @@ hr {
 #addItemForm #image {
   font-family: "Montserrat";
   font-size: 16px;
-  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: 1px solid rgba(53, 53, 53, 0.5);
+  color: #f87400;
+  margin: 1px;
+}
+button#newItem {
+  border: 0;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+#newItem:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=styles.css.map */
